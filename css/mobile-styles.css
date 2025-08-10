@@ -1,0 +1,109 @@
+@media (max-width: 375px) {
+    body {
+        height: fit-content;
+    }
+
+    :root {
+        --side-padding: 0px 20px;
+    }
+
+    header, .sec-1, .sec-2, .sec-3, footer {
+        padding: var(--side-padding);
+        text-align: center;
+        height: fit-content;
+        width: 100%;
+        position: relative;
+    }
+
+    header {
+        padding: 20px;
+    }
+
+    header .links {
+        display: none;
+    }
+
+    header .r-btn {
+        display: none;
+    }
+
+    .sec-1 .text,
+    .sec-1 .img {
+        height: fit-content;
+        width: 100%;
+    }
+
+    .sec-1 .img {
+        order: 1;
+        overflow: hidden;
+    }
+    
+    .sec-1 .img img {
+        width: 100%;
+        height: 100%;
+        position: relative;
+        top: -80px;
+        padding-right: 0;
+    }
+
+    .sec-1 .text {
+        order: 2;
+        margin-top: -80px;
+    }
+
+    .sec-2 .disc {
+        padding: 0;
+    }
+
+    .sec-2 .four-items {
+        height: fit-content;
+        flex-flow: row wrap;
+        padding-bottom: 20px;
+    }
+
+    .sec-2 .four-items .item {
+        width: 100%;
+    }
+
+    .sec-3 .four-items {
+        flex-flow: row wrap;
+        height: fit-content;
+        text-align: start;
+        padding-bottom: 20px;
+        margin-top: -10px;
+    }
+
+    .sec-3 .four-items .item {
+        width: 100%;
+    }
+
+    footer {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: center;
+        width: 100%;
+        height: fit-content;
+        padding: 20px;
+    }
+
+    footer .column-2 {
+        padding: 0;
+    }
+
+    footer .column-2 a {
+        width: 100%;
+        margin: 10px 0;
+    }
+
+    footer .column-3 {
+        padding-top: 0;
+    }
+
+    footer .column-3 .r-btn {
+        margin: 0px auto;
+    }
+
+    footer .column-3 .rts {
+        margin-top: 15px;
+    }
+}

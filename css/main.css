@@ -1,0 +1,232 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Public Sans";
+    font-size: 18px;
+    transition: 0.3s;
+}
+
+:root {
+    --side-padding: 0 100px;
+    --first-color: hsl(233, 26%, 24%);
+    --sec-color: hsl(233, 8%, 62%);
+}
+
+.r-btn {
+    display: inline-block;
+    margin: 50px 0px;
+    padding: 20px 40px;
+    border-radius: 50px;
+    color: white;
+    text-decoration: none;
+    background-image: linear-gradient(230deg, hsl(136, 64%, 51%),hsl(192, 69%, 51%));
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.r-btn:hover {
+    opacity: 0.8;
+}
+
+header {
+    width: 100%;
+    height: fit-content;
+    padding: var(--side-padding);
+    background-color: hsl(0, 100%, 100%);
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .r-btn {
+    margin: 0;
+    height: fit-content;
+}
+
+header .links {
+    width: 45%;
+    display: flex;
+    justify-content: space-between;
+}
+
+header .links a {
+    text-decoration: none;
+    margin: 0px 10px;
+    padding: 30px 0;
+    color: hsl(233, 8%, 62%);
+    border-bottom: 2px solid transparent;
+    transition: 0.3s;
+}
+
+header .links a:hover {
+    color: var(--first-color);
+    border-bottom: 2px solid hsl(136, 64%, 51%);
+}
+
+.sec-1 {
+    width: 100%;
+    height: 100vh;
+    background-color: hsl(0, 0%, 98%);
+    padding: var(--side-padding);
+    padding-right: 0;
+    display: flex;
+    flex-flow: row wrap;
+}
+
+.sec-1 .text {
+    width: 40%;
+    height: 100%;
+}
+
+.sec-1 .text h1 {
+    color: var(--first-color);
+    font-size: 50px;
+    font-weight: normal;
+}
+
+.sec-1 .text .disc {
+    color: var(--sec-color);
+    padding-right: 50px;
+}
+
+.sec-1 .img {
+    width: 60%;
+    background-image: url(../images/bg-intro-desktop.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50px -150px;
+}
+
+.sec-1 .img img {
+    width: 100%;
+}
+
+.sec-2 {
+    height: 100vh;
+    background-color: hsl(220, 16%, 96%);
+    padding: var(--side-padding);
+    padding-top: 100px;
+}
+
+.sec-2 h1 {
+    color: var(--first-color);
+}
+
+.sec-2 .disc {
+    padding-right: 500px;
+    color: var(--sec-color);
+}
+
+.four-items {
+    height: 250px;
+    margin-top: 100px;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+}
+
+.four-items .item {
+    width: calc(95% / 4);
+    height: 100%;
+}
+
+.four-items .item > * {
+    margin-top: 15px;
+}
+
+.four-items .item .name {
+    color: var(--first-color);
+}
+
+.four-items .item .dtl {
+    color: var(--sec-color);
+}
+
+.sec-3 {
+    height: 100vh;
+    background-color: hsl(0, 100%, 100%);
+    padding: var(--side-padding);
+}
+
+.sec-3 .four-items .item img {
+    width: 100%;
+    height: 200px;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+
+.sec-3 .four-items .item > div {
+    padding: 0 20px;
+}
+
+.sec-3 .four-items .item .p-right {
+    color: var(--sec-color);
+    font-size: 15px;
+    margin-bottom: 20px;
+}
+
+.sec-3 .four-items .item a {
+    display: block;
+    margin-bottom: 10px;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.sec-3 .four-items .item a:hover {
+    color: hsl(136, 64%, 51%);
+    text-decoration: underline;
+}
+
+.sec-3 .four-items .item .dtl {
+    font-size: 15px;
+}
+
+footer {
+    background-color: var(--first-color);
+    height: 200px;
+    padding: var(--side-padding);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+footer .column-1 {
+    text-align: center;
+}
+
+footer .column-1 .logo {
+    margin-bottom: 20px;
+}
+
+footer .column-1 .social img {
+    cursor: pointer;
+    margin: 0px 10px;
+}
+
+footer .column-2 {
+    height: 100%;
+    padding: 40px;
+    display: flex;
+    flex-flow: row wrap;
+}
+
+footer .column-2 a {
+    display: block;
+    text-decoration: none;
+    color: white;
+    width: calc(100% / 2);
+    margin-top: 10px;
+    transition: 0.3s;
+}
+
+footer .column-2 a:hover {
+    color: hsl(136, 64%, 51%);
+}
+
+footer .column-3 .rts {
+    color: hsl(233, 8%, 62%);
+    font-size: 15px;
+}
